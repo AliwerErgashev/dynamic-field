@@ -7,6 +7,7 @@ import {FormSelectComponent} from '../component/form-select/form-select.componen
 import {HttpClientModule} from '@angular/common/http';
 import {DynamicFieldDirective} from '../component/dynamic-field.directive';
 import {ReactiveFormsModule} from '@angular/forms';
+import {BrowserModule} from '@angular/platform-browser';
 
 
 
@@ -23,6 +24,7 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserModule
   ],
   exports: [DynamicFieldComponent],
 })

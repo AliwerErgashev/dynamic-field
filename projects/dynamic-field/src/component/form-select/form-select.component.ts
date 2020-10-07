@@ -3,7 +3,6 @@ import {Field} from '../../models/field.interface';
 import {ConfigOptions, FieldConfig} from '../../models/field-config.interface';
 import {FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
-import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs';
 
 @Component({
