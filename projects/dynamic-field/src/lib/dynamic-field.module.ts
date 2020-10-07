@@ -1,12 +1,29 @@
 import { NgModule } from '@angular/core';
 import { DynamicFieldComponent } from './dynamic-field.component';
+import {FormButtonComponent} from '../component/form-button/form-button.component';
+import {FormDateComponent} from '../component/form-date/form-date.component';
+import {FormInputComponent} from '../component/form-input/form-input.component';
+import {FormSelectComponent} from '../component/form-select/form-select.component';
+import {HttpClientModule} from '@angular/common/http';
+import {DynamicFieldDirective} from '../component/dynamic-field.directive';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [DynamicFieldComponent],
-  imports: [
+  declarations: [
+    FormButtonComponent,
+    FormDateComponent,
+    FormInputComponent,
+    FormSelectComponent,
+    DynamicFieldComponent,
+    DynamicFieldDirective,
+
   ],
-  exports: [DynamicFieldComponent]
+  imports: [
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
+  exports: [DynamicFieldComponent],
 })
 export class DynamicFieldModule { }
